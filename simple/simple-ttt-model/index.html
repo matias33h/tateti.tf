@@ -1,0 +1,83 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <h1>Ta Te Ti</h1>
+  <style>
+    /* Estilos CSS para el tablero del juego */
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+
+    h1 {
+  color: #2f8f4d ;
+}
+
+  .scoreboard{
+
+    color: #2f8f4d;
+  }
+
+    body {
+  padding-left:450px;
+     
+  
+  background-image: url('../pexels-pixabay-247676.jpg');
+
+  background-repeat: no-repeat;
+
+}
+
+    .cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      font-size: 48px;
+      background-color: #eee;
+      cursor: pointer;
+    }
+
+    .cell:hover {
+      background-color: #2f8f4d;
+    }
+  </style>
+</head>
+<body>
+ 
+
+  <div class="board">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+
+    <button id="reset-button">Reiniciar</button>
+  </div>
+
+   <div class="scoreboard">
+    <div >
+      Jugador: <span id="player-score">0</span>
+    </div>
+    <div >
+      Computadora: <span id="computer-score">0</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
+
